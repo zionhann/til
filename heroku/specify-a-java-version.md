@@ -30,28 +30,6 @@ Heroku에 자바 프로젝트를 배포하기 위해 Java 버전을 일치시키
 ### Java Compiler
 ![img2](img/java-compiler.png)
 
-## Maven
-
-### pom.xml
-```xml
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>    <!--here-->
-        <maven.compiler.target>8</maven.compiler.target>    <!--here-->
-    </properties>
-```
-or
-```xml
-    <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version>
-        <configuration>
-        <release>8</release>  <!--here-->
-        </configuration>
-    </plugin>
-```
-
-[Change the JDK version in a Maven project](https://www.jetbrains.com/help/idea/maven-support.html#change_jdk)
-
 ## 2. `system.properties` 파일 설정
 
 프로젝트의 `root` 폴더에 `system.properties` 파일을 생성하고 다음과 같은 코드를 입력한다.
